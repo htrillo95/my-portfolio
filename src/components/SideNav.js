@@ -44,7 +44,7 @@ function SideNav() {
           }}
           className={activeSection === "hero" ? "active" : ""}
         >
-          Hero
+          Home
         </a>
         <a
           href="#about"
