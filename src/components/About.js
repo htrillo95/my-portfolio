@@ -18,9 +18,9 @@ function About() {
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-4xl font-bold text-gray-100 mb-4">About Me</h2>
         <p className="text-lg mb-4">
-          I'm Hector, an aspiring web dev creating clean, user-friendly apps
-          that make an impact. I'm currently developing my skills in
-          full-stack development with tools like React and Spring Boot.
+          Aspiring web dev creating clean, user-friendly apps
+          that make an impact. Learning full-stack development with
+  tools like React and Spring Boot.
         </p>
         <p className="text-lg">
           Outside of coding, I enjoy running to stay active and thrifting for
