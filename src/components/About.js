@@ -38,52 +38,37 @@ function About() {
 
         {/* Right Column */}
         <div className="space-y-8 relative">
-          <div className="relative pl-6 border-l-2 border-indigo-500">
-            <h3 className="text-2xl font-semibold text-gray-100 mb-2">
+          <div className="relative">
+            <h3 className="text-2xl font-semibold text-gray-100 mb-4">
               My Journey
             </h3>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full flex-shrink-0"></div>
-                <span>
-                  <strong>2023-2024:</strong> Finished a bootcamp focused on
-                  full-stack web development.
-                </span>
+              <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
+                <strong>2023-2024:</strong> Finished a bootcamp focused on
+                full-stack web development.
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full flex-shrink-0"></div>
-                <span>
-                  <strong>2024-2025:</strong> Building on what I’ve learned by
-                  diving deeper into React and backend development.
-                </span>
+              <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
+                <strong>2024-2025:</strong> Building on what I’ve learned by
+                diving deeper into React and backend development.
               </div>
             </div>
           </div>
 
-          <div className="relative pl-6 border-l-2 border-indigo-500">
-            <h3 className="text-2xl font-semibold text-gray-100 mb-2">
+          <div className="relative">
+            <h3 className="text-2xl font-semibold text-gray-100 mb-4">
               In Progress
             </h3>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full flex-shrink-0"></div>
-                <span>
-                  Learning Python for automation and backend scripting.
-                </span>
+              <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
+                Learning Python for automation and backend scripting.
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full flex-shrink-0"></div>
-                <span>
-                  Exploring machine learning and AI concepts to understand their
-                  potential applications in development.
-                </span>
+              <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
+                Exploring machine learning and AI concepts to understand their
+                potential applications in development.
               </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full flex-shrink-0"></div>
-                <span>
-                  Experimenting with advanced front-end features like animations
-                  and micro-interactions to enhance user experience.
-                </span>
+              <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
+                Experimenting with advanced front-end features like animations
+                and micro-interactions to enhance user experience.
               </div>
             </div>
           </div>
