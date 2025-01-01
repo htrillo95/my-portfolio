@@ -77,26 +77,6 @@ function About() {
         {/* Vertical Divider */}
         <div className="absolute inset-y-0 left-1/2 w-[1px] bg-gray-600 hidden md:block"></div>
       </div>
-
-      {/* Chevron Button */}
-      <div className="mt-8 text-gray-400">
-        <Link to="projects" smooth={true} duration={500}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-8 h-8 mx-auto animate-bounce cursor-pointer"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </Link>
-      </div>
     </section>
   );
 }
