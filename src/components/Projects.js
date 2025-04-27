@@ -17,14 +17,14 @@ function Projects() {
 
   const projectList = [
     {
-      title: "PropertyPro",
+      title: "RiverLock", 
       description:
-        "A property management application for tenants and admins to manage leases and maintenance requests.",
-      technologies: ["React", "Spring Boot", "MySQL"],
+        "A password manager built to help users securely store and manage their passwords.",
+      technologies: ["React", "Spring Boot", "Postgres"],
       learnings:
-        "Learned backend APIs with Spring Boot and improved database structuring.",
-      liveLink: "#", // Replace with live demo URL
-      githubLink: "#", // Replace with GitHub repo URL
+        "Learned secure authentication, backend API integrations, and data encryption techniques.",
+      liveLink: "https://riverlock.vercel.app/", 
+      githubLink: "https://github.com/htrillo95/password-manager-frontend", 
     },
     {
       title: "Coders' Quiz",
@@ -33,8 +33,8 @@ function Projects() {
       technologies: ["Java", "Spring Boot", "React"],
       learnings:
         "Strengthened API integrations and improved understanding of state management.",
-      liveLink: "#", // Replace with live demo URL
-      githubLink: "#", // Replace with GitHub repo URL
+      liveLink: "#", 
+      githubLink: "#", 
     },
   ];
 
