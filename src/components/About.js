@@ -15,8 +15,8 @@ function About() {
             <span className="absolute top-0 left-[-40px] w-[4px] h-full bg-indigo-500 rounded-md"></span>
           </h2>
           <p className="text-lg">
-            I’m a web developer learning the ropes of building functional,
-            user-friendly apps. I focus on keeping my code clean and my designs
+            I am an aspiring web developer learning the ropes of building functional,
+            user friendly apps. I focus on keeping my code clean and my designs
             simple. Right now, I’m sharpening my skills with React and Spring
             Boot as I explore full-stack development.
           </p>
@@ -45,7 +45,7 @@ function About() {
             <div className="space-y-4">
               <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
                 <strong>2023-2024:</strong> Finished a bootcamp focused on
-                full-stack web development.
+                full stack web development.
               </div>
               <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
                 <strong>2024-2025:</strong> Building on what I’ve learned by
@@ -67,8 +67,8 @@ function About() {
                 potential applications in development.
               </div>
               <div className="bg-gray-800 rounded-lg border border-indigo-500 p-4">
-                Experimenting with advanced front-end features like animations
-                and micro-interactions to enhance user experience.
+                Experimenting with advanced front end features like animations
+                and micro interactions to enhance user experience.
               </div>
             </div>
           </div>

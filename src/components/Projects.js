@@ -33,8 +33,8 @@ function Projects() {
       technologies: ["Java", "Spring Boot", "React"],
       learnings:
         "Strengthened API integrations and improved understanding of state management.",
-      liveLink: "#", 
-      githubLink: "#", 
+      liveLink: "https://coders-quiz.vercel.app/", 
+      githubLink: "https://github.com/htrillo95/RailwayHostingTest", 
     },
   ];
 
