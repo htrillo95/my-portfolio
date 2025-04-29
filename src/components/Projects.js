@@ -17,16 +17,6 @@ function Projects() {
 
   const projectList = [
     {
-      title: "RiverLock", 
-      description:
-        "A password manager built to help users securely store and manage their passwords.",
-      technologies: ["React", "Spring Boot", "Postgres"],
-      learnings:
-        "Learned secure authentication, backend API integrations, and data encryption techniques.",
-      liveLink: "https://riverlock.vercel.app/", 
-      githubLink: "https://github.com/htrillo95/password-manager-frontend", 
-    },
-    {
       title: "Coders' Quiz",
       description:
         "An interactive quiz platform for coding enthusiasts to test their skills.",
@@ -36,6 +26,17 @@ function Projects() {
       liveLink: "https://coders-quiz.vercel.app/", 
       githubLink: "https://github.com/htrillo95/RailwayHostingTest", 
     },
+    {
+      title: "RiverLock", 
+      description:
+        "A password manager built to help users securely store and manage their passwords.",
+      technologies: ["React", "Spring Boot", "Postgres"],
+      learnings:
+        "Learned secure authentication, backend API integrations, and data encryption techniques.",
+      liveLink: "https://riverlock.vercel.app/", 
+      githubLink: "https://github.com/htrillo95/password-manager-frontend", 
+    },
+    
   ];
 
   return (
