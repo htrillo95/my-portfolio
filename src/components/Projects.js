@@ -36,7 +36,16 @@ function Projects() {
       liveLink: "https://riverlock.vercel.app/", 
       githubLink: "https://github.com/htrillo95/password-manager-frontend", 
     },
-    
+    {
+      title: "Courier Route Dashboard",
+      description:
+        "Analyzes real-world delivery routes using ZIP codes, estimated stops, and workload zones. Built to explore workload balancing and route clustering.",
+      technologies: ["Python", "Pandas", "Streamlit", "PyDeck"],
+      learnings:
+        "Learned to work with geospatial ZIP data, simulate realistic logistics behavior, and build visual dashboards with filters and heatmaps.",
+      liveLink: "/case-study", 
+      githubLink: "https://github.com/htrillo95/case-study",  
+    }
   ];
 
   return (
