@@ -1,9 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaBolt, FaMapMarkedAlt, FaLightbulb } from "react-icons/fa";
+import { FaBolt, FaMapMarkedAlt, FaLightbulb, FaBalanceScale } from "react-icons/fa";
 import mockScreenshot1 from "../assets/icons/case-study/streamlit_dashboard.png";
 import mockScreenshot2 from "../assets/icons/case-study/heatmap.png";
+import rebalanceChart from "../assets/icons/case-study/Rebalance_Bar_Chart.png"; // Add your chart screenshot here
 
 function CaseStudy() {
   return (
@@ -65,6 +66,37 @@ function CaseStudy() {
           </div>
         </motion.section>
 
+        {/* Rebalancing Section */}
+        <motion.section
+        className="grid md:grid-cols-2 gap-12 items-center"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        >
+        <div>
+            <h2 className="text-3xl font-bold text-white flex items-center gap-3 mb-4">
+            <FaBalanceScale className="text-pink-400" /> Route Rebalancing
+            </h2>
+            <p className="text-gray-400 text-lg mb-4">
+            After identifying overloaded routes, I explored how stops could be more evenly spread among ZIPs within each route.
+            This helped visualize how rebalancing might reduce spikes and improve overall balance.
+            </p>
+            <div className="text-gray-400 text-sm space-y-1">
+            <p><strong>Standard Deviation Before:</strong> 0.94</p>
+            <p><strong>Standard Deviation After:</strong> 0.47</p>
+            </div>
+        </div>
+
+        <div className="bg-slate-800 rounded-xl p-3 shadow-inner">
+            <img
+            src={rebalanceChart}
+            alt="Before vs After Rebalancing"
+            className="rounded w-full"
+            />
+        </div>
+        </motion.section>
+
         {/* Learnings */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
@@ -91,38 +123,38 @@ function CaseStudy() {
 
         {/* CTA */}
         <motion.section
-        className="text-center space-y-4"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.4 }}
+          className="text-center space-y-4"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
         >
-        <a
+          <a
             href="https://htrillo95-case-study-app-49c0n3.streamlit.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg transition"
-        >
+          >
             Launch Live Dashboard
-        </a>
+          </a>
 
-        <div className="text-sm text-gray-400 space-x-3">
+          <div className="text-sm text-gray-400 space-x-3">
             <a
-            href="https://github.com/htrillo95/case-study/blob/main/app.py"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-white"
+              href="https://github.com/htrillo95/case-study/blob/main/app.py"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-white"
             >
-            View Script
+              View Script
             </a>
             <span>•</span>
             <Link
-            to="/"
-            className="underline hover:text-white"
+              to="/"
+              className="underline hover:text-white"
             >
-            Return to Portfolio
+              Return to Portfolio
             </Link>
-        </div>
+          </div>
         </motion.section>
 
       </div>
