@@ -5,6 +5,7 @@ import jsIcon from "../assets/icons/icons8-javascript-480.png";
 import reactIcon from "../assets/icons/icons8-react-480.png";
 import mysqlIcon from "../assets/icons/icons8-mysql-logo-480.png";
 import springIcon from "../assets/icons/icons8-spring-boot-480.png";
+import { Link } from "react-router-dom";
 
 function Projects() {
   const skills = [
@@ -104,14 +105,12 @@ function Projects() {
                 <strong>Learnings:</strong> {project.learnings}
               </p>
               <div className="flex justify-between mt-4">
-                <a
-                  href={project.liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Live Demo
-                </a>
+              <Link
+                to={project.liveLink}
+                className="text-blue-400 hover:underline"
+              >
+                Live Demo
+              </Link>
                 <a
                   href={project.githubLink}
                   target="_blank"

@@ -12,6 +12,7 @@ import CaseStudy from "./components/CaseStudy";
 import CursorEffect from "./components/CursorEffect";
 import SideNav from "./components/SideNav";
 import ConnectSidebar from "./components/ConnectSidebar";
+import ScrollToTop from "./components/ScrollToTop";
 
 function AppContent() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function AppContent() {
 
   return (
     <div>
+      <ScrollToTop /> 
       <CursorEffect />
       {!isCaseStudy && <SideNav />}
       {!isCaseStudy && <ConnectSidebar />}
