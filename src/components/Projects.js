@@ -38,6 +38,16 @@ function Projects() {
       githubLink: "https://github.com/htrillo95/password-manager-frontend", 
     },
     {
+      title: "OneWayZine Store",
+      description:
+        "A storefront for my small batch zine. Built with custom Stripe checkout, Resend emails, and admin tools.",
+      technologies: ["Next.js", "Tailwind CSS", "Stripe", "Resend"],
+      learnings:
+        "Implemented real world e-commerce features: secure checkout, order confirmation emails, and mobile friendly layout. Improved full stack workflow with Vercel and webhooks.",
+      liveLink: "https://www.onewayzine.com/",
+      githubLink: "https://github.com/htrillo95/oneway-zine",
+    },
+    {
       title: "Courier Route Dashboard",
       description:
         "Analyzes real-world delivery routes using ZIP codes, estimated stops, and workload zones. Built to explore workload balancing and route clustering.",
@@ -123,6 +133,7 @@ function Projects() {
             </motion.div>
           ))}
         </motion.div>
+        
 
         {/* Skills Section */}
         <motion.h2
