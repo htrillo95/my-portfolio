@@ -50,7 +50,7 @@ function Projects() {
     {
       title: "Courier Route Dashboard",
       description:
-        "Analyzes real-world delivery routes using ZIP codes, estimated stops, and workload zones. Built to explore workload balancing and route clustering.",
+        "Prototype dashboard using simulated data to visualize workloads. Designed as a learning tool, not a production system",
       technologies: ["Python", "Pandas", "Streamlit", "PyDeck"],
       learnings:
         "Learned to work with geospatial ZIP data, simulate realistic logistics behavior, and build visual dashboards with filters and heatmaps.",
