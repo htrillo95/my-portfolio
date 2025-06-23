@@ -66,37 +66,6 @@ function CaseStudy() {
           </div>
         </motion.section>
 
-        {/* Rebalancing Section */}
-        <motion.section
-        className="grid md:grid-cols-2 gap-12 items-center"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        >
-        <div>
-            <h2 className="text-3xl font-bold text-white flex items-center gap-3 mb-4">
-            <FaBalanceScale className="text-pink-400" /> Route Rebalancing
-            </h2>
-            <p className="text-gray-400 text-lg mb-4">
-            After identifying overloaded routes, I explored how stops could be more evenly spread among ZIPs within each route.
-            This helped visualize how rebalancing might reduce spikes and improve overall balance.
-            </p>
-            <div className="text-gray-400 text-sm space-y-1">
-            <p><strong>Standard Deviation Before:</strong> 0.94</p>
-            <p><strong>Standard Deviation After:</strong> 0.47</p>
-            </div>
-        </div>
-
-        <div className="bg-slate-800 rounded-xl p-3 shadow-inner">
-            <img
-            src={rebalanceChart}
-            alt="Before vs After Rebalancing"
-            className="rounded w-full"
-            />
-        </div>
-        </motion.section>
-
         {/* Learnings */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
