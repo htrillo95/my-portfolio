@@ -15,7 +15,7 @@ function About() {
             <span className="absolute top-0 left-[-40px] w-[4px] h-full bg-indigo-500 rounded-md"></span>
           </h2>
           <p className="text-lg">
-            I'm aweb developer learning the ropes of building functional,
+            I'm a web developer learning the ropes of building functional,
             user friendly apps. I focus on keeping my code clean and my designs
             simple. Right now, I’m sharpening my skills with React and Spring
             Boot as I explore full-stack development.
