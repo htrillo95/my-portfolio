@@ -18,7 +18,7 @@ function About() {
             I'm a web developer learning the ropes of building functional,
             user friendly apps. I focus on keeping my code clean and my designs
             simple. Right now, I’m sharpening my skills with React and Spring
-            Boot as I explore full-stack development.
+            Boot as I explore full stack development.
           </p>
           <ul className="list-none space-y-4">
             <li className="flex items-center">
