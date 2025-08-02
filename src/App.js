@@ -5,6 +5,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
+
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -13,6 +14,7 @@ import CursorEffect from "./components/CursorEffect";
 import SideNav from "./components/SideNav";
 import ConnectSidebar from "./components/ConnectSidebar";
 import ScrollToTop from "./components/ScrollToTop";
+import AppWrapper from "./components/AppWrapper";
 
 function AppContent() {
   const location = useLocation();
@@ -20,7 +22,7 @@ function AppContent() {
 
   return (
     <div>
-      <ScrollToTop /> 
+      <ScrollToTop />
       <CursorEffect />
       {!isCaseStudy && <SideNav />}
       {!isCaseStudy && <ConnectSidebar />}
@@ -51,7 +53,9 @@ function AppContent() {
 function App() {
   return (
     <Router>
-      <AppContent />
+      <AppWrapper>
+        <AppContent />
+      </AppWrapper>
     </Router>
   );
 }
