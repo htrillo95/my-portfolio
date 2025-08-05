@@ -32,7 +32,7 @@ const Hero = () => {
 
       {/* Description */}
       <p className="hero-fade mt-6 max-w-xl text-white/90 text-base md:text-lg">
-        I build clean, high performance interfaces with a touch of cinematic polish.
+        I build clean, high performance interfaces with a focus on user experience.
       </p>
 
       {/* CTA Button */}
