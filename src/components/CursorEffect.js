@@ -1,36 +1,41 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 
 function CursorEffect() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-    const handleMouseMove = (event) => {
+  const handleMouseMove = useCallback((event) => {
+    // Throttle mouse events for better performance
+    requestAnimationFrame(() => {
       setPosition({ x: event.clientX, y: event.clientY });
-    };
-    window.addEventListener("mousemove", handleMouseMove);
+    });
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [handleMouseMove]);
 
   return (
     <div
       style={{
         position: "fixed",
-        top: position.y - 300, // Center vertically
-        left: position.x - 300, // Center horizontally
-        width: "600px", // Adjust size for the spotlight
+        top: 0,
+        left: 0,
+        width: "600px",
         height: "600px",
+        transform: `translate(${position.x - 300}px, ${position.y - 300}px)`,
         background: "radial-gradient(circle, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0) 70%)",
         borderRadius: "50%",
         pointerEvents: "none",
         zIndex: 9999,
-        filter: "blur(80px)", // Diffuses the spotlight for a seamless blend
+        filter: "blur(80px)",
         mixBlendMode: "soft-light",
-        opacity: 0.8, // Adjust overall brightness
-        transition: "transform 0.05s ease, opacity 0.2s ease", // Smooth transition
+        opacity: 0.8,
+        willChange: "transform",
       }}
-    ></div>
+    />
   );
 }
 

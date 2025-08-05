@@ -104,13 +104,13 @@ function About() {
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
-  const leftInView = useInView(leftRef, { once: true });
-  const rightInView = useInView(rightRef, { once: true });
+  const leftInView = useInView(leftRef, { once: true, margin: "-50px" });
+  const rightInView = useInView(rightRef, { once: true, margin: "-50px" });
 
   return (
     <section
       id="about"
-      className="min-h-screen bg-gradient-to-b from-black to-navy text-gray-300 px-8 py-16 flex flex-col items-center justify-center"
+      className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-gray-800 px-8 py-16 flex flex-col items-center justify-center"
     >
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 relative">
         {/* Left Column with 3D slide-in */}
@@ -121,14 +121,14 @@ function About() {
           animate={leftInView ? "show" : "hidden"}
           className="space-y-8 relative perspective-[1000px]"
         >
-          <h2 className="text-4xl font-bold text-gray-100 mb-4 relative z-10">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 relative z-10">
             About Me
-            <span className="absolute top-0 left-[-40px] w-[4px] h-full bg-indigo-500 rounded-md"></span>
+            <span className="absolute top-0 left-[-40px] w-[4px] h-full bg-blue-500 rounded-md"></span>
           </h2>
-          <p className="text-lg">
+          <p className="text-lg text-gray-700">
             I'm a web developer learning the ropes of building functional,
             user friendly apps. I focus on keeping my code clean and my designs
-            simple. Right now, I’m sharpening my skills with React and Spring
+            simple. Right now, I'm sharpening my skills with React and Spring
             Boot as I explore full stack development.
           </p>
 
@@ -148,7 +148,7 @@ function About() {
                 className="flex items-center"
                 variants={itemVariant}
               >
-                <div className="w-2.5 h-2.5 bg-indigo-500 rounded-full flex-shrink-0 mr-3"></div>
+                <div className="w-2.5 h-2.5 bg-blue-500 rounded-full flex-shrink-0 mr-3"></div>
                 <span>{text}</span>
               </motion.li>
             ))}
@@ -163,7 +163,7 @@ function About() {
           className="space-y-8 relative"
         >
           <div className="relative perspective-[1200px]">
-            <h3 className="text-2xl font-semibold text-gray-100 mb-4">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
               My Journey
             </h3>
             <div className="space-y-4">
@@ -177,7 +177,7 @@ function About() {
                   variants={journeyCardVariant}
                   initial="hidden"
                   animate={rightInView ? "show" : "hidden"}
-                  className="bg-gray-800 rounded-lg border border-indigo-500 p-4"
+                  className="bg-white rounded-lg border border-blue-200 p-4 shadow-md"
                 >
                   {item}
                 </motion.div>
@@ -186,7 +186,7 @@ function About() {
           </div>
 
           <div className="relative perspective-[1200px]">
-            <h3 className="text-2xl font-semibold text-gray-100 mb-4">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
               In Progress
             </h3>
             <div className="space-y-4">
@@ -201,7 +201,7 @@ function About() {
                   variants={cardVariant}
                   initial="hidden"
                   animate={rightInView ? "show" : "hidden"}
-                  className="bg-gray-800 rounded-lg border border-indigo-500 p-4"
+                  className="bg-white rounded-lg border border-blue-200 p-4 shadow-md"
                 >
                   {item}
                 </motion.div>
@@ -211,7 +211,7 @@ function About() {
         </motion.div>
 
         {/* Divider */}
-        <div className="absolute inset-y-0 left-1/2 w-[1px] bg-gray-600 hidden md:block"></div>
+        <div className="absolute inset-y-0 left-1/2 w-[1px] bg-blue-200 hidden md:block"></div>
       </div>
     </section>
   );

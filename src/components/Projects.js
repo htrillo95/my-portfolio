@@ -20,7 +20,7 @@ function Projects() {
     {
       title: "Coders' Quiz",
       description:
-        "An interactive quiz platform for coding enthusiasts to test their skills.",
+        "Built a full stack quiz platform that handles user authentication, progress tracking, and dynamic content management. Implemented secure API endpoints and real time score updates, demonstrating my ability to build complete user workflows.",
       technologies: ["Java", "Spring Boot", "React"],
       learnings:
         "Strengthened API integrations and improved understanding of state management.",
@@ -30,7 +30,7 @@ function Projects() {
     {
       title: "RiverLock", 
       description:
-        "A password manager built to help users securely store and manage their passwords.",
+        "A password manager built to help users securely store and manage their passwords. Learned secure authentication, backend API integrations, and data encryption techniques.",
       technologies: ["React", "Spring Boot", "Postgres"],
       learnings:
         "Learned secure authentication, backend API integrations, and data encryption techniques.",
@@ -43,7 +43,7 @@ function Projects() {
         "A storefront for my small batch zine. Built with custom Stripe checkout, Resend emails, and admin tools.",
       technologies: ["Next.js", "Tailwind CSS", "Stripe", "Resend"],
       learnings:
-        "Implemented real world e-commerce features: secure checkout, order confirmation emails, and mobile friendly layout. Improved full stack workflow with Vercel and webhooks.",
+        "Implemented real world e commerce features: secure checkout, order confirmation emails, and mobile friendly layout. Improved full stack workflow with Vercel and webhooks.",
       liveLink: "https://www.onewayzine.com/",
       githubLink: "https://github.com/htrillo95/oneway-zine",
     },
@@ -62,13 +62,13 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col bg-gradient-to-b from-navy to-black text-gray-100"
+      className="min-h-screen flex flex-col bg-gradient-to-b from-blue-50 to-white text-gray-800"
     >
       {/* Main Content */}
       <div className="flex-grow py-16 px-8">
         {/* Animated Heading for Projects */}
         <motion.h2
-          className="text-4xl font-bold text-center text-gray-100 mb-8"
+          className="text-4xl font-bold text-center text-gray-900 mb-8"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -89,35 +89,35 @@ function Projects() {
           {projectList.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 rounded-lg shadow-md p-6 hover:scale-105 hover:shadow-xl transition-all duration-300"
+              className="bg-white rounded-lg shadow-lg p-6 hover:scale-105 hover:shadow-xl transition-all duration-300 border border-blue-100"
               variants={{
                 hidden: { opacity: 0, y: 50 },
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <h3 className="text-2xl font-bold text-gray-100 mb-2">
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 {project.title}
               </h3>
-              <p className="text-lg text-gray-300 mb-4">
+              <p className="text-lg text-gray-700 mb-4">
                 {project.description}
               </p>
               <ul className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, idx) => (
                   <li
                     key={idx}
-                    className="bg-gray-700 text-gray-100 px-2 py-1 rounded text-sm"
+                    className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium"
                   >
                     {tech}
                   </li>
                 ))}
               </ul>
-              <p className="text-sm text-gray-400 mt-2">
+              <p className="text-sm text-gray-600 mt-2">
                 <strong>Learnings:</strong> {project.learnings}
               </p>
               <div className="flex justify-between mt-4">
               <Link
                 to={project.liveLink}
-                className="text-blue-400 hover:underline"
+                className="text-blue-600 hover:text-blue-700 hover:underline font-medium"
               >
                 Live Demo
               </Link>
@@ -125,7 +125,7 @@ function Projects() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
+                  className="text-blue-600 hover:text-blue-700 hover:underline font-medium"
                 >
                   GitHub
                 </a>
@@ -137,7 +137,7 @@ function Projects() {
 
         {/* Skills Section */}
         <motion.h2
-          className="text-4xl font-bold text-center text-gray-100 mt-16 mb-8"
+          className="text-4xl font-bold text-center text-gray-900 mt-16 mb-8"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -169,7 +169,7 @@ function Projects() {
                 alt={`${skill.name} logo`}
                 className="w-20 h-20 mb-2"
               />
-              <span className="text-gray-300 text-sm">{skill.name}</span>
+              <span className="text-gray-700 text-sm font-medium">{skill.name}</span>
             </motion.div>
           ))}
         </motion.div>

@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "../styles/SideNav.css"; // Import the CSS file for styling
 
 function SideNav() {
   const [activeSection, setActiveSection] = useState("hero");
   const [progress, setProgress] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
+  const handleScroll = useCallback(() => {
+    requestAnimationFrame(() => {
       const sections = document.querySelectorAll(".section");
       const scrollPos = window.scrollY + window.innerHeight / 2;
 
@@ -21,10 +21,19 @@ function SideNav() {
 
       const totalHeight = document.body.scrollHeight - window.innerHeight;
       setProgress((window.scrollY / totalHeight) * 100);
-    };
+    });
+  }, []);
 
-    window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]);
+
+  const scrollToSection = useCallback((sectionId) => {
+    const element = document.querySelector(`#${sectionId}`);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   }, []);
 
   return (
@@ -33,14 +42,14 @@ function SideNav() {
         <div
           className="progressIndicator"
           style={{ height: `${progress}%` }}
-        ></div>
+        />
       </div>
       <div className="navLinksContainer">
         <a
           href="#hero"
           onClick={(e) => {
             e.preventDefault();
-            document.querySelector("#hero").scrollIntoView({ behavior: "smooth" });
+            scrollToSection("hero");
           }}
           className={activeSection === "hero" ? "active" : ""}
         >
@@ -50,7 +59,7 @@ function SideNav() {
           href="#about"
           onClick={(e) => {
             e.preventDefault();
-            document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
+            scrollToSection("about");
           }}
           className={activeSection === "about" ? "active" : ""}
         >
@@ -60,7 +69,7 @@ function SideNav() {
           href="#projects"
           onClick={(e) => {
             e.preventDefault();
-            document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+            scrollToSection("projects");
           }}
           className={activeSection === "projects" ? "active" : ""}
         >
