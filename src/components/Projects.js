@@ -20,32 +20,12 @@ function Projects() {
     {
       title: "Coders' Quiz",
       description:
-        "Built a full stack quiz platform that handles user authentication, progress tracking, and dynamic content management. Implemented secure API endpoints and real time score updates, demonstrating my ability to build complete user workflows.",
+        "A full stack quiz platform that handles user authentication, progress tracking, and dynamic content management. Implemented secure API endpoints and real time score updates, demonstrating my ability to build complete user workflows.",
       technologies: ["Java", "Spring Boot", "React"],
       learnings:
         "Strengthened API integrations and improved understanding of state management.",
       liveLink: "https://coders-quiz.vercel.app/", 
       githubLink: "https://github.com/htrillo95/RailwayHostingTest", 
-    },
-    {
-      title: "RiverLock", 
-      description:
-        "A password manager built to help users securely store and manage their passwords. Learned secure authentication, backend API integrations, and data encryption techniques.",
-      technologies: ["React", "Spring Boot", "Postgres"],
-      learnings:
-        "Learned secure authentication, backend API integrations, and data encryption techniques.",
-      liveLink: "https://riverlock.vercel.app/", 
-      githubLink: "https://github.com/htrillo95/password-manager-frontend", 
-    },
-    {
-      title: "Zine Store",
-      description:
-        "A storefront for my small batch zine. Built with custom Stripe checkout, Resend emails, and admin tools.",
-      technologies: ["Next.js", "Tailwind CSS", "Stripe", "Resend"],
-      learnings:
-        "Implemented real world e commerce features: secure checkout, order confirmation emails, and mobile friendly layout. Improved full stack workflow with Vercel and webhooks.",
-      liveLink: "https://www.onewayzine.com/",
-      githubLink: "https://github.com/htrillo95/oneway-zine",
     },
     {
       title: "Courier Route Dashboard",
@@ -56,7 +36,29 @@ function Projects() {
         "Learned to work with geospatial ZIP data, simulate realistic logistics behavior, and build visual dashboards with filters and heatmaps.",
       liveLink: "/case-study", 
       githubLink: "https://github.com/htrillo95/case-study",  
-    }
+    },
+    {
+      title: "RiverLock", 
+      description:
+        "A password manager built to help users securely store and manage their passwords. Learned secure authentication, backend API integrations, and data encryption techniques.",
+      technologies: ["React", "Spring Boot", "Postgres"],
+      learnings:
+        "Learned secure authentication, backend API integrations, and data encryption techniques.",
+      liveLink: "https://riverlock.vercel.app/", 
+      githubLink: "https://github.com/htrillo95/password-manager-frontend", 
+    }, 
+    
+    {
+      title: "Zine Store",
+      description:
+        "A storefront for my small batch zine. Built with custom Stripe checkout, Resend emails, and admin tools.",
+      technologies: ["Next.js", "Tailwind CSS", "Stripe", "Resend"],
+      learnings:
+        "Implemented real world e commerce features: secure checkout, order confirmation emails, and mobile friendly layout. Improved full stack workflow with Vercel and webhooks.",
+      liveLink: "https://www.onewayzine.com/",
+      githubLink: "https://github.com/htrillo95/oneway-zine",
+    },
+   
   ];
 
   return (

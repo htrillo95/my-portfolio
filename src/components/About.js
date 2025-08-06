@@ -126,8 +126,8 @@ function About() {
             <span className="absolute top-0 left-[-40px] w-[4px] h-full bg-blue-500 rounded-md"></span>
           </h2>
           <p className="text-lg text-gray-700">
-            I'm a web developer learning the ropes of building functional,
-            user friendly apps. I focus on keeping my code clean and my designs
+            I'm a developer learning the ropes of building functional,
+            user friendly apps and systems. I focus on keeping my code clean and my designs
             simple. Right now, I'm sharpening my skills with React and Spring
             Boot as I explore full stack development.
           </p>
@@ -168,7 +168,7 @@ function About() {
             </h3>
             <div className="space-y-4">
               {[
-                "2023-2024: Finished a bootcamp focused on full stack web development.",
+                "2023-2024: Completed a full stack development bootcamp (frontend, backend, deployment).",
                 "2024-2025: Diving deeper into React and backend development.",
               ].map((item, i) => (
                 <motion.div
@@ -191,8 +191,8 @@ function About() {
             </h3>
             <div className="space-y-4">
               {[
-                "Learning Python for automation and backend scripting.",
-                "Exploring machine learning and AI concepts to understand their potential applications in development.",
+                "Learning Python for automation and data handling with pandas.",
+                "Exploring how AI tools can support design, development, and productivity.",
                 "Experimenting with advanced front end features like animations and micro interactions to enhance user experience.",
               ].map((item, index) => (
                 <motion.div
