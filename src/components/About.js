@@ -142,6 +142,7 @@ function About() {
               "Writing clean, accessible code",
               "Keeping the user experience front and center",
               "Taking inspiration from creativity and innovation",
+              "Constantly learning and adapting to new technologies"
             ].map((text, i) => (
               <motion.li
                 key={i}
@@ -168,7 +169,7 @@ function About() {
             </h3>
             <div className="space-y-4">
               {[
-                "2023-2024: Completed a full stack development bootcamp (frontend, backend, deployment).",
+                "2023-2024: Completed a full stack development bootcamp covering frontend, backend, and deployment fundamentals.",
                 "2024-2025: Diving deeper into React and backend development.",
               ].map((item, i) => (
                 <motion.div
