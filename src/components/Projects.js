@@ -18,16 +18,6 @@ function Projects() {
 
   const projectList = [
     {
-      title: "Coders' Quiz",
-      description:
-        "A full stack quiz platform that handles user authentication, progress tracking, and dynamic content management. Implemented secure API endpoints and real time score updates, demonstrating my ability to build complete user workflows.",
-      technologies: ["Java", "Spring Boot", "React"],
-      learnings:
-        "Strengthened API integrations and improved understanding of state management.",
-      liveLink: "https://coders-quiz.vercel.app/", 
-      githubLink: "https://github.com/htrillo95/RailwayHostingTest", 
-    },
-    {
       title: "Courier Route Dashboard",
       description:
         "Prototype dashboard using simulated data to visualize workloads. Designed as a learning tool, not a production system",
@@ -47,7 +37,16 @@ function Projects() {
       liveLink: "https://riverlock.vercel.app/", 
       githubLink: "https://github.com/htrillo95/password-manager-frontend", 
     }, 
-    
+    {
+      title: "Walmart Sales Dashboard", 
+      description:
+        "A data dashboard built with Python and Streamlit to explore weekly sales patterns, including the impact of holidays and fuel prices. Includes Tableau visualizations, downloadable files, and a scrollable Jupyter notebook.",
+      technologies: ["Python", "Streamlit", "Tableau", "Jupyter"],
+      learnings:
+        "Improved data cleaning, dashboard layout, and correlation analysis. Learned to integrate notebooks, KPIs, and visuals in a shareable app.",
+      liveLink: "https://walmartsalesdashboard-c7vh396nzdohei9rgxmjjb.streamlit.app/", 
+      githubLink: "https://github.com/htrillo95/walmart_sales_dashboard", 
+    }, 
     {
       title: "Zine Store",
       description:
